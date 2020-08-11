@@ -1,0 +1,31 @@
+import turtle as t
+t.speed(5)
+window=t.Screen()
+window.bgcolor("gray")
+t.penup()
+t.hideturtle()
+def draw_circle(x,y,size,color,fillcolor):
+    t.begin_fill()
+    t.goto(x,y)
+    t.pendown()
+    t.color(color)
+    t.fillcolor(fillcolor)
+    t.circle(size)
+    t.end_fill()
+    t.penup()
+draw_circle(0,-200,200,"yellow",'red')
+draw_circle(0,-175,175,"black",'white')
+draw_circle(0,-125,125,"black",'red')
+draw_circle(0,-75,75,"black",'dark blue')
+t.goto(-70,20)
+t.pendown()
+t.color("white")
+t.begin_fill()
+for x in range(5):
+    t.forward(55)
+    t.left(72)
+    t.forward(55)
+    t.right(144)
+t.end_fill()
+
+
